@@ -1,87 +1,204 @@
 <!DOCTYPE html>
 <html>
 <body>
-<style>
-body {background-color: powderblue;}
-h1   {color: blue;}
-p    {color: red;}
+
+<p><a href="#C4">Jump to Chapter 4</a></p>
+<p><a href="#C10">Jump to Chapter 10</a></p>
+
+<h2>Chapter 1</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 2</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 3</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2 id="C4">Chapter 4</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 5</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 6</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 7</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 8</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 9</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2 id="C10">Chapter 10</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 11</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 12</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 13</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 14</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 15</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 16</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 17</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 18</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 19</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 20</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 21</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 22</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 23</h2>
+<p>This chapter explains ba bla bla</p>
+<br>
+a:link, a:visited {
+  background-color: #f44336;
+  color: white;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: red;
+}
 </style>
 </head>
 <body>
 
-<h1>This is a heading</h1>
-<p>This is a paragraph.</p>
-<h1 style="color:blue;">A Blue Heading</h1>
-<p style="color:red;">A red paragraph.</p>
-<br>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-
-<h1>This is a heading</h1>
-<p>This is a paragraph.</p>
-<br>
-h1 {
-  color: blue;
-  font-family: verdana;
-  font-size: 300%;
-
+<h2>Link Button</h2>
+<p>A link styled as a button:</p>
+<a href="default.asp" target="_blank">This is a link</a>
+a:link {
+  color: green;
+  background-color: transparent;
+  text-decoration: none;
 }
-p  {
+a:visited {
+  color: pink;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
   color: red;
-  font-family: courier;
-  font-size: 160%;
+  background-color: transparent;
+  text-decoration: underline;
 }
-</styl>
-</head>
-<body>
-
-<h1>This is a heading</h1>
-<p>This is a paragraph.</p>
-<br>
-p {
-  border: 2px solid red ;
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
 }
 </style>
 </head>
 <body>
 
-<h1>This is a heading</h1>
+<h2>Link Colors</h2>
 
-<p>This is a paragraph.</p>
-<p>This is a paragraph.</p>
-<p>This is a paragraph.</p>
-p {
-  border: 2px solid powderblue;
-  padding: 30px;
+<p>You can change the default colors of links</p>
+
+<a href="html_images.asp" target="_blank">HTML Images</a> 
+<h1>HTML Links</h1>
+
+<p><a href="https://www.w3schools.com/">Visit W3Schools.com!</a></p>
+<h2>The target Attribute</h2>
+
+<a href="https://www.w3schools.com/" target="_blank">Visit W3Schools!</a> 
+
+<p>If target="_blank", the link will open in a new browser window or tab.</p>
+<h2>Absolute URLs</h2>
+<p><a href="https://www.w3.org/">W3C</a></p>
+<p><a href="https://www.google.com/">Google</a></p>
+
+<h2>Relative URLs</h2>
+<p><a href="html_images.asp">HTML Images</a></p>
+<p><a href="/css/default.asp">CSS Tutorial</a></p>
+<h2>Image as a Link</h2>
+
+<p>The image below is a link. Try to click on it.</p>
+
+<a href="default.asp"><img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;"></a>
+<h2>Link to an Email Address</h2>
+
+<p>To create a link that opens in the user's email program (to let them send a new email), use mailto: inside the href attribute:</p>
+
+<p><a href="mailto:someone@example.com">Send email</a></p>
+<h2>Button as a Links</h2>
+
+<p>Click the button to go to the HTML tutorial.</p>
+
+<button onclick="document.location='default.asp'">HTML Tutorial</button>
+<h2>Link Titles</h2>
+<p>The title attribute specifies extra information about an element. The information is most often shown as a tooltip text when the mouse moves over the element.</p>
+<a href="https://www.w3schools.com/html/" title="Go to W3Schools HTML section">Visit our HTML Tutorial</a>
+<h2>External Paths</h2>
+
+<p>This example uses a full URL to link to a web page:</p>
+<p><a href="https://www.w3schools.com/html/default.asp">HTML tutorial</a></p>
+<h2>External Paths</h2>
+
+<p>This example links to a page located in the html folder on the current web site:</p>
+
+<p><a href="/html/default.asp">HTML tutorial</a></p>
+<h2>External Paths</h2>
+
+<p>This example links to a page located in the same folder as the current page:</p>
+
+<p><a href="default.asp">HTML tutorial</a></p>
+a:link {
+  color: green;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: pink;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
 }
 </style>
 </head>
 <body>
 
-<h1>This is a heading</h1>
+<h2>Link Colors</h2>
 
-<p>This is a paragraph.</p>
-<p>This is a paragraph.</p>
-<p>This is a paragraph.</p>
- <link rel="stylesheet" href="https://www.w3schools.com/html/styles.css">
-</head>
-<body>
+<p>You can change the default colors of links</p>
 
-<h1>This is a heading</h1>
-<p>This is a paragraph.</p>
-<link rel="stylesheet" href="/html/styles.css">
-</head>
-<body>
+<a href="html_images.asp" target="_blank">HTML Images</a> 
 
-<h1>This is a heading</h1>
-<p>This is a paragraph.</p>
-<link rel="stylesheet" href="styles.css">
-</head>
-<body>
-
-<h1>This is a heading</h1>
-<p>This is a paragraph.</p>
 
 </body>
 </html>
